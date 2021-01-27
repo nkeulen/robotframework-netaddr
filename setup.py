@@ -1,17 +1,22 @@
-from setuptools import setup, find_packages
-from os.path import abspath, dirname, join
+# -*- coding: utf-8 -*-
 
-README_MD = open(join(dirname(abspath(__file__)), "README.md")).read()
+from setuptools import setup, find_packages
+
+
+with open('README.md') as readme_file:
+    readme = readme_file.read()
+
+with open('requirements.txt') as requirements_file:
+    requirements = requirements_file.read().split("\n")
+
 
 setup(
     name = "robotframework-netaddr",
-    version = "0.0.1",
+    version = "0.0.2",
     author = "Niels Keulen",
     author_email = "nkeulen@gmail.com",
-    packages = find_packages(include=["robotframework_netaddr"], exclude=["tests"]),
-    include_package_data=True,
     description = "Robotframework keyword for the python netaddr library",
-    long_description = README_MD,
+    long_description = readme,
     long_description_content_type = "text/markdown",
     url = "https://github.com/nkeulen/robotframework-netaddr",
     classifiers = [
@@ -25,7 +30,10 @@ setup(
         "Topic :: Software Development :: Testing :: Acceptance"
     ],
     keywords = "netaddr, robotframework, ip address, ipv4, ipv6, mac address, network",
-    install_requires = ["netaddr"],
-    python_requires='>=3.5'
+    install_requires = requirements,
+    packages=find_packages(where='src'),
+    package_dir={'': 'src'},
+    use_scm_version=True,
+    setup_requires=['setuptools_scm'],
+    include_package_data=True
 )
-

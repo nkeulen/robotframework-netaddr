@@ -1,7 +1,7 @@
 import netaddr
 
 
-class RobotFrameworkNetAddr(object):
+class RobotFrameworkNetAddr():
     ''' Wrapper functions to access a selection of the python netaddr library from robot framework.
 
     Most of the functionality from the netaddr IPNetwork, IPAddress and EUI classes are implemented

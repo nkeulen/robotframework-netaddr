@@ -1,5 +1,9 @@
 import unittest
-from robotframework_netaddr import RobotFrameworkNetAddr
+import sys
+import os
+
+sys.path.append(os.path.abspath("../src/RobotFrameworkNetAddr"))
+from robotframeworknetaddr import RobotFrameworkNetAddr
 
 
 class TestEUI(unittest.TestCase):

@@ -1,9 +1,12 @@
 import unittest
-from robotframework_netaddr import RobotFrameworkNetAddr
+import sys
+import os
+
+sys.path.append(os.path.abspath("../src/RobotFrameworkNetAddr"))
+from robotframeworknetaddr import RobotFrameworkNetAddr
 
 
 class TestIPAddress(unittest.TestCase):
-
 
     def test_ipaddress_ipv4(self):
         priv_ipv4_ip = '10.20.30.40'
@@ -18,9 +21,9 @@ class TestIPAddress(unittest.TestCase):
         invalid_ipv4 = ['300.400.500.600', 'abcd']
 
         ip_plus_512 = RobotFrameworkNetAddr.ipaddress_add(priv_ipv4_ip, 512)
-        self.assertEqual(str(ip_plus_512),  priv_ipv4_ip_plus_512)
+        self.assertEqual(str(ip_plus_512), priv_ipv4_ip_plus_512)
         ip_min_1 = RobotFrameworkNetAddr.ipaddress_add(priv_ipv4_ip, -1)
-        self.assertEqual(str(ip_min_1),  priv_ipv4_ip_min_1)
+        self.assertEqual(str(ip_min_1), priv_ipv4_ip_min_1)
 
         self.assertFalse(RobotFrameworkNetAddr.ipaddress_is_link_local(priv_ipv4_ip))
         self.assertTrue(RobotFrameworkNetAddr.ipaddress_is_link_local(link_local_ipv4))
@@ -32,12 +35,11 @@ class TestIPAddress(unittest.TestCase):
         self.assertTrue(RobotFrameworkNetAddr.ipaddress_is_loopback(loopback_ipv4))
 
         rev_dns = RobotFrameworkNetAddr.ipaddress_reverse_dns(priv_ipv4_ip)
-        self.assertEqual(str(rev_dns),  priv_ipv4_reverse_dns)
+        self.assertEqual(str(rev_dns), priv_ipv4_reverse_dns)
 
         for invalid in invalid_ipv4:
             self.assertFalse(RobotFrameworkNetAddr.ipaddress_is_valid_ipv4(invalid))
         self.assertTrue(RobotFrameworkNetAddr.ipaddress_is_valid_ipv4(pub_ipv4_ip))
-
 
     def test_ipaddress_ipv6(self):
         priv_ipv6_ip = 'fc00:1:2:3::400'
@@ -50,9 +52,9 @@ class TestIPAddress(unittest.TestCase):
         loopback_ipv6 = "::1"
 
         ip_plus_1 = RobotFrameworkNetAddr.ipaddress_add(priv_ipv6_ip, 1)
-        self.assertEqual(str(ip_plus_1),  priv_ipv6_ip_plus_1)
+        self.assertEqual(str(ip_plus_1), priv_ipv6_ip_plus_1)
         ip_min_1 = RobotFrameworkNetAddr.ipaddress_add(priv_ipv6_ip, -1)
-        self.assertEqual(str(ip_min_1),  priv_ipv6_ip_min_1)
+        self.assertEqual(str(ip_min_1), priv_ipv6_ip_min_1)
 
         self.assertFalse(RobotFrameworkNetAddr.ipaddress_is_link_local(priv_ipv6_ip))
         self.assertTrue(RobotFrameworkNetAddr.ipaddress_is_link_local(link_local_ipv6))
@@ -64,4 +66,4 @@ class TestIPAddress(unittest.TestCase):
         self.assertTrue(RobotFrameworkNetAddr.ipaddress_is_loopback(loopback_ipv6))
 
         rev_dns = RobotFrameworkNetAddr.ipaddress_reverse_dns(priv_ipv6_ip)
-        self.assertEqual(str(rev_dns),  priv_ipv6_reverse_dns)
+        self.assertEqual(str(rev_dns), priv_ipv6_reverse_dns)

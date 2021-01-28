@@ -12,7 +12,7 @@ with open('requirements.txt') as requirements_file:
 
 setup(
     name = "robotframework-netaddr",
-    version = "0.0.2",
+    version = "0.0.4",
     author = "Niels Keulen",
     author_email = "nkeulen@gmail.com",
     description = "Robotframework keyword for the python netaddr library",
@@ -35,5 +35,6 @@ setup(
     package_dir={'': 'src'},
     use_scm_version=True,
     setup_requires=['setuptools_scm'],
-    include_package_data=True
+    include_package_data=True,
+    python_requires='>=3.5'
 )

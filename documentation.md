@@ -1,11 +1,9 @@
 # robotframework-netaddr
 ### keyword documentation
 #  
-#  
 ---
 #  
-#  
-### ipnetwork_broadcast
+### ipnetwork broadcast
 Returns the broadcast address of the given subnet.
 
 *Arguments*
@@ -15,7 +13,7 @@ Returns the broadcast address of the given subnet.
 | kwargs | passed to IPNetwork constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipnetwork_cidr
+### ipnetwork cidr
 Returns the network in cidr format.
 
 *Arguments*
@@ -25,7 +23,7 @@ Returns the network in cidr format.
 | kwargs | passed to IPNetwork constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipnetwork_hostmask
+### ipnetwork hostmask
 Returns the hostmask.
 
 *Arguments*
@@ -35,7 +33,7 @@ Returns the hostmask.
 | kwargs | passed to IPNetwork constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipnetwork_info
+### ipnetwork info
 Returns a dict with info about the network.
 
 *Arguments*
@@ -45,7 +43,7 @@ Returns a dict with info about the network.
 | kwargs | passed to IPNetwork constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipnetwork_ip
+### ipnetwork ip
 Returns the ip part the IPNetwork object.
 
 *Arguments*
@@ -55,7 +53,7 @@ Returns the ip part the IPNetwork object.
 | kwargs | passed to IPNetwork constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipnetwork_is_link_local
+### ipnetwork is link local
 Check if the address is a link local address.
 
 *Arguments*
@@ -65,7 +63,7 @@ Check if the address is a link local address.
 | kwargs | passed to IPNetwork constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipnetwork_is_loopback
+### ipnetwork is loopback
 Check if the address is a loopback address.
 
 *Arguments*
@@ -75,7 +73,7 @@ Check if the address is a loopback address.
 | kwargs | passed to IPNetwork constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipnetwork_is_multicast
+### ipnetwork is multicast
 Check if the address is a multicast address.
 
 *Arguments*
@@ -85,7 +83,7 @@ Check if the address is a multicast address.
 | kwargs | passed to IPNetwork constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipnetwork_is_private
+### ipnetwork is private
 Check if the address is a private address.
 
 *Arguments*
@@ -95,7 +93,7 @@ Check if the address is a private address.
 | kwargs | passed to IPNetwork constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipnetwork_is_reserved
+### ipnetwork is reserved
 Check if the address is a reserved address.
 
 *Arguments*
@@ -105,7 +103,7 @@ Check if the address is a reserved address.
 | kwargs | passed to IPNetwork constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipnetwork_is_unicast
+### ipnetwork is unicast
 Check if the address is a unicast address.
 
 *Arguments*
@@ -115,7 +113,7 @@ Check if the address is a unicast address.
 | kwargs | passed to IPNetwork constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipnetwork_netmask
+### ipnetwork netmask
 Returns the subnetmask of the subnet.
 
 *Arguments*
@@ -125,7 +123,7 @@ Returns the subnetmask of the subnet.
 | kwargs | passed to IPNetwork constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipnetwork_network
+### ipnetwork network
 Returns the network address of the subnet.
 
 *Arguments*
@@ -135,7 +133,7 @@ Returns the network address of the subnet.
 | kwargs | passed to IPNetwork constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipnetwork_prefixlen
+### ipnetwork prefixlen
 Returns the prefix length of the subnet.
 
 *Arguments*
@@ -145,7 +143,7 @@ Returns the prefix length of the subnet.
 | kwargs | passed to IPNetwork constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipnetwork_size
+### ipnetwork size
 Returns the number of addresses in the subnet.
 
 *Arguments*
@@ -155,7 +153,7 @@ Returns the number of addresses in the subnet.
 | kwargs | passed to IPNetwork constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipnetwork_version
+### ipnetwork version
 Returns the IP version of the network (4 or 6).
 
 *Arguments*
@@ -165,7 +163,7 @@ Returns the IP version of the network (4 or 6).
 | kwargs | passed to IPNetwork constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipnetwork_is_network_addr
+### ipnetwork is network addr
 Returns if the provided addr is the network address.
 
 *Arguments*
@@ -175,7 +173,7 @@ Returns if the provided addr is the network address.
 | kwargs | passed to IPNetwork constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipnetwork_is_valid_ipv4
+### ipnetwork is valid ipv4
 Returns if the provided addr is valid for IPv4.
 
 *Arguments*
@@ -186,7 +184,7 @@ Returns if the provided addr is valid for IPv4.
 
 
 
-### ipnetwork_is_valid_ipv6
+### ipnetwork is valid ipv6
 Returns if the provided addr is valid for IPv6.
 
 *Arguments*
@@ -197,7 +195,7 @@ Returns if the provided addr is valid for IPv6.
 
 
 
-### ipnetwork_previous
+### ipnetwork previous
 Returns subnet one lower than the one provided with addr.
 
 *Arguments*
@@ -207,7 +205,7 @@ Returns subnet one lower than the one provided with addr.
 | kwargs | passed to IPNetwork constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipnetwork_next
+### ipnetwork next
 Returns subnet one higher than the one provided with addr.
 
 *Arguments*
@@ -217,7 +215,7 @@ Returns subnet one higher than the one provided with addr.
 | kwargs | passed to IPNetwork constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipnetwork_in_network
+### ipnetwork in network
 Checks if network addr2 overlaps with in addr.
 
 *Arguments*
@@ -229,7 +227,7 @@ Checks if network addr2 overlaps with in addr.
 | kwargs_addr2 | passed to IPNetwork constructor for addr2, see netaddr docs for options  |  - |  -   |
 
 
-### ipaddress_bin
+### ipaddress bin
 Returns ip in binary.
 
 *Arguments*
@@ -239,7 +237,7 @@ Returns ip in binary.
 | kwargs | passed to IPAddress constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipaddress_bits
+### ipaddress bits
 Returns ip series of bits grouped together in octets (ipv4) or hextets (ipv6).
 
 *Arguments*
@@ -249,7 +247,7 @@ Returns ip series of bits grouped together in octets (ipv4) or hextets (ipv6).
 | kwargs | passed to IPAddress constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipaddress_info
+### ipaddress info
 Returns a dict with info about the IP address.
 
 *Arguments*
@@ -259,7 +257,7 @@ Returns a dict with info about the IP address.
 | kwargs | passed to IPAddress constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipaddress_is_hostmask
+### ipaddress is hostmask
 Checks if the IP address is a hostmask.
 
 *Arguments*
@@ -269,7 +267,7 @@ Checks if the IP address is a hostmask.
 | kwargs | passed to IPAddress constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipaddress_is_link_local
+### ipaddress is link local
 Checks if the IP address is a link local address.
 
 *Arguments*
@@ -279,7 +277,7 @@ Checks if the IP address is a link local address.
 | kwargs | passed to IPAddress constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipaddress_is_loopback
+### ipaddress is loopback
 Checks if the IP address is a loopback address.
 
 *Arguments*
@@ -289,7 +287,7 @@ Checks if the IP address is a loopback address.
 | kwargs | passed to IPAddress constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipaddress_is_multicast
+### ipaddress is multicast
 Checks if the IP address is a multicast address.
 
 *Arguments*
@@ -299,7 +297,7 @@ Checks if the IP address is a multicast address.
 | kwargs | passed to IPAddress constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipaddress_is_netmask
+### ipaddress is netmask
 Checks if the IP address is a netmask.
 
 *Arguments*
@@ -309,7 +307,7 @@ Checks if the IP address is a netmask.
 | kwargs | passed to IPAddress constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipaddress_is_private
+### ipaddress is private
 Checks if the IP address is a private address.
 
 *Arguments*
@@ -319,7 +317,7 @@ Checks if the IP address is a private address.
 | kwargs | passed to IPAddress constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipaddress_is_reserved
+### ipaddress is reserved
 Checks if the IP address is a reserved address.
 
 *Arguments*
@@ -329,7 +327,7 @@ Checks if the IP address is a reserved address.
 | kwargs | passed to IPAddress constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipaddress_is_unicast
+### ipaddress is unicast
 Checks if the IP address is a unicast address.
 
 *Arguments*
@@ -339,7 +337,7 @@ Checks if the IP address is a unicast address.
 | kwargs | passed to IPAddress constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipaddress_reverse_dns
+### ipaddress reverse dns
 Returns a reverse dns notation of the IP address.
 
 *Arguments*
@@ -349,7 +347,7 @@ Returns a reverse dns notation of the IP address.
 | kwargs | passed to IPAddress constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipaddress_version
+### ipaddress version
 Returns the IP version of the IP address (4 or 6).
 
 *Arguments*
@@ -359,7 +357,7 @@ Returns the IP version of the IP address (4 or 6).
 | kwargs | passed to IPAddress constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipaddress_words
+### ipaddress words
 Returns a octets (IPv4) or hextets (IPv6) set of decimal values.
 
 *Arguments*
@@ -369,7 +367,7 @@ Returns a octets (IPv4) or hextets (IPv6) set of decimal values.
 | kwargs | passed to IPAddress constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipaddress_add
+### ipaddress add
 Add a number to an IP address to get a higher or lower (if provided with a negative amount) IP.
 
 *Arguments*
@@ -380,7 +378,7 @@ Add a number to an IP address to get a higher or lower (if provided with a negat
 | kwargs | passed to IPAddress constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipaddress_is_valid_ipv4
+### ipaddress is valid ipv4
 Checks if addr is a valid IPv4 address.
 
 *Arguments*
@@ -390,7 +388,7 @@ Checks if addr is a valid IPv4 address.
 | kwargs | passed to IPAddress constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipaddress_is_valid_ipv6
+### ipaddress is valid ipv6
 Checks if addr is a valid IPv6 address.
 
 *Arguments*
@@ -400,7 +398,7 @@ Checks if addr is a valid IPv6 address.
 | kwargs | passed to IPAddress constructor, see netaddr docs for options  |  - |  -   |
 
 
-### ipaddress_in_network
+### ipaddress in network
 Checks if addr is in subnet netw.
 
 *Arguments*
@@ -410,7 +408,7 @@ Checks if addr is in subnet netw.
 | netw | the network |  10.0.0.0/24   |  -   |
 
 
-### eui_bin
+### eui bin
 Returns addr in binary.
 
 *Arguments*
@@ -420,7 +418,7 @@ Returns addr in binary.
 | kwargs | passed to EUI constructor, see netaddr docs for options  |  - |  -   |
 
 
-### eui_bits
+### eui bits
 Returns addr in grouped bits.
 
 *Arguments*
@@ -430,7 +428,7 @@ Returns addr in grouped bits.
 | kwargs | passed to EUI constructor, see netaddr docs for options  |  - |  -   |
 
 
-### eui_ei
+### eui ei
 Returns the addr's EI part.
 
 *Arguments*
@@ -440,7 +438,7 @@ Returns the addr's EI part.
 | kwargs | passed to EUI constructor, see netaddr docs for options  |  - |  -   |
 
 
-### eui_eui64
+### eui eui64
 Returns the addr's EUI64.
 
 *Arguments*
@@ -450,7 +448,7 @@ Returns the addr's EUI64.
 | kwargs | passed to EUI constructor, see netaddr docs for options  |  - |  -   |
 
 
-### eui_iab
+### eui iab
 Returns the addr's IAB (if available).
 
 *Arguments*
@@ -460,7 +458,7 @@ Returns the addr's IAB (if available).
 | kwargs | passed to EUI constructor, see netaddr docs for options  |  - |  -   |
 
 
-### eui_info
+### eui info
 Returns a dict with info on the addr.
 
 *Arguments*
@@ -470,7 +468,7 @@ Returns a dict with info on the addr.
 | kwargs | passed to EUI constructor, see netaddr docs for options  |  - |  -   |
 
 
-### eui_ipv6
+### eui ipv6
 Returns an IPv6 address by combining a provided IPv6 prefix with this addr.
 
 *Arguments*
@@ -481,7 +479,7 @@ Returns an IPv6 address by combining a provided IPv6 prefix with this addr.
 | kwargs | passed to EUI constructor, see netaddr docs for options  |  - |  -   |
 
 
-### eui_ipv6_link_local
+### eui ipv6 link local
 Returns an IPv6 link local address based on this addr.
 
 *Arguments*
@@ -491,7 +489,7 @@ Returns an IPv6 link local address based on this addr.
 | kwargs | passed to EUI constructor, see netaddr docs for options  |  - |  -   |
 
 
-### eui_is_iab
+### eui is iab
 Check if the addr is IAB.
 
 *Arguments*
@@ -501,7 +499,7 @@ Check if the addr is IAB.
 | kwargs | passed to EUI constructor, see netaddr docs for options  |  - |  -   |
 
 
-### eui_modified_eui64
+### eui modified eui64
 Returns modified eui64 of this addr.
 
 *Arguments*
@@ -511,7 +509,7 @@ Returns modified eui64 of this addr.
 | kwargs | passed to EUI constructor, see netaddr docs for options  |  - |  -   |
 
 
-### eui_oui
+### eui oui
 Returns the OUI of this addr.
 
 *Arguments*
@@ -521,7 +519,7 @@ Returns the OUI of this addr.
 | kwargs | passed to EUI constructor, see netaddr docs for options  |  - |  -   |
 
 
-### eui_packed
+### eui packed
 Returns the addr in packed format.
 
 *Arguments*
@@ -531,7 +529,7 @@ Returns the addr in packed format.
 | kwargs | passed to EUI constructor, see netaddr docs for options  |  - |  -   |
 
 
-### eui_value
+### eui value
 Returns the value of the addr in decimal.
 
 *Arguments*
@@ -541,7 +539,7 @@ Returns the value of the addr in decimal.
 | kwargs | passed to EUI constructor, see netaddr docs for options  |  - |  -   |
 
 
-### eui_version
+### eui version
 Returns the version of the addr.
 
 *Arguments*
@@ -551,7 +549,7 @@ Returns the version of the addr.
 | kwargs | passed to EUI constructor, see netaddr docs for options  |  - |  -   |
 
 
-### eui_words
+### eui words
 Returns addr in a set of decimal values.
 
 *Arguments*
@@ -561,7 +559,7 @@ Returns addr in a set of decimal values.
 | kwargs | passed to EUI constructor, see netaddr docs for options  |  - |  -   |
 
 
-### eui_is_valid
+### eui is valid
 Returns if addr is a valid MAC address.
 
 *Arguments*

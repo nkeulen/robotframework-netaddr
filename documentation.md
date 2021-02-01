@@ -1,8 +1,12 @@
 # robotframework-netaddr
-### keyword documentation
-#  
----
-#  
+
+## Importing the library
+```robotframework
+*** Settings ***
+Library    RobotFrameworkNetAddr
+```
+
+## Keyword documentation
 ### ipnetwork broadcast
 Returns the broadcast address of the given subnet.
 
